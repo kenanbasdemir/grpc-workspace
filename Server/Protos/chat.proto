@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server.Protos";
+
+package chat;
+
+service ChatEndpoint {
+
+  rpc SendText(TextRequest) returns (TextResponse);
+}
+
+message TextRequest{
+	string textData = 1;
+}
+
+message TextResponse{
+	string result = 1;
+}
