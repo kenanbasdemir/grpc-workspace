@@ -1,7 +1,6 @@
 ﻿using Client.Protos;
 using Grpc.Net.Client;
 using System;
-using System.Threading.Tasks;
 
 namespace Client
 {
